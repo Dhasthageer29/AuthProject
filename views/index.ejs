@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form action="/register" method="post">
+        <input type="text"
+        placeholder="Enter Your Name"
+        name="name"
+        >
+        <input type="email"
+        name="email"
+        placeholder="Enter Your Email"
+        >
+        <input type="password"
+        name="password"
+        placeholder="Enter Your Password"
+        >
+        <select name="gender"required >
+            <option value="">--Please choose an option--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+      <input type="submit"
+      value="Create User" class="submit">
+    </form>
+</body>
+</html>
