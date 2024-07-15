@@ -3,7 +3,9 @@ const bcrypt = require('bcrypt');
 
 const registerUser = async ({ name, email, password, gender }) => {
     const salt = await bcrypt.genSalt(10);
+    console.log(salt)
     const hash = await bcrypt.hash(password, salt);
+    console.log(hash)
     const userCreated = await userModel.create({
         name,
         email,
