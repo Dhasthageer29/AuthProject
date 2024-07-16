@@ -11,7 +11,7 @@ const register = async (req, res) => {
         res.send(userCreated);
     } catch (error) {
         console.error(error);
-        res.status(500).send("Error registering user");
+       
     }
 };
 
@@ -26,7 +26,7 @@ const login = async (req, res) => {
         res.send(message);
     } catch (error) {
         console.error(error);
-        res.status(500).send("Error logging in user");
+       
     }
 };
 
@@ -41,7 +41,7 @@ const deleteUser = async (req, res) => {
         res.send(deleteUser);
     } catch (error) {
         console.error(error);
-        res.status(500).send("Error deleting user");
+      
     }
 };
 
